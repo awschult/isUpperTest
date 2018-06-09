@@ -6,6 +6,7 @@
 // and of character type.
 
 #include <stdio.h>
+#include <ctype.h>
 
 int isUpperSubtract(char inputChar)
 {
@@ -14,7 +15,12 @@ int isUpperSubtract(char inputChar)
 
 int isUpperBitwise(char inputChar)
 {
-    return ((inputChar & 0b01100000) == 0);
+    return ((inputChar & 0b00100000) == 0)? 0:1;
+}
+
+int isUpperSTD(char inputChar)
+{
+    return isupper(inputChar);
 }
 
 int main()
