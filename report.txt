@@ -1,0 +1,10 @@
+Creating 1000000 characters...
+Testing std function.
+Answer = 256
+Total ticks for std:  7096
+Testing bitwise function.
+Answer = 1
+Total ticks for Bitwise:  5293
+Testing subtract function.
+Answer = 1
+Total ticks for subtract:  4813
