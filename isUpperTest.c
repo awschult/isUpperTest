@@ -20,7 +20,7 @@ int isUpperSubtract(char inputChar)
 
 int isUpperBitwise(char inputChar)
 {
-    return ((inputChar & 0b00100000) == 0)? 1:0;
+    return ((inputChar & 0x40) >> 6);
 }
 
 int isUpperSTD(char inputChar)
@@ -37,7 +37,7 @@ int main()
     // do not initialize, use garbage as 'random'
     // numbers. modulo to create all characters.
 
-    char* theList = calloc(MAX_LIST_SIZE, sizeof(char));
+    char* theList = malloc(MAX_LIST_SIZE*sizeof(char));
 
     if(theList == NULL)
        return 1;
