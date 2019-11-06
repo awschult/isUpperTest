@@ -3,11 +3,11 @@
 ## brief
 
 	This is a test to come up with the fastest method
-	for determining whether a character is uppercase.
+	for determining whether an ascii character is uppercase.
 
 ## rules
 
-	Create a function that returns 'int' true/false, 
+	Create a function that returns `int` true/false, 
 	based on whether the character input is uppercase.
 
 ## assumptions
